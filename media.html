@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media query</title>
+    <style>
+        .container{
+            display:grid;
+            grid-template-columns: repeat(4 ,1fr);
+            gap: 10px;
+        }
+        .car{
+            border: 2px solid red;
+            border-radius: 5px;
+            padding: 5px;
+            background-color: #050652;color: #ffffff;
+        }
+        .car button{background-color: #f5d907;color: #f50707;border: none;padding: 5px 10px;border-radius: 5px;}
+        .car img{
+            width:100%;border-radius: 5px;overflow: hidden;height: 10rem;
+        }
+        /* small screen */
+        @media screen and (max-width:576px){
+            .container{
+                grid-template-columns: repeat(1, 1fr);
+            }
+            .car{background-color: #050652;color: #ffffff;}
+            .car button{background-color: #f5d907;color: #f50707;border: none;padding: 5px 10px;border-radius: 5px;}
+        }
+        /* medium screen */
+        @media screen and (min-width:577px) and (max-width:992px){
+            .container{
+                grid-template-columns: repeat(2, 2fr);
+            }
+            .car{background-color: #050652;color: #ffffff;}
+            .car button{background-color: #f5d907;color: #f50707;border: none;padding: 5px 10px;border-radius: 5px;}
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="car">
+            <img src="images/sauber.jpg" alt="">
+            <h3>car item -Sauber</h3>
+            <p>price: $10000</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, eum alias ratione voluptatum voluptates dolore eius numquam neque quibusdam blanditiis.</p>
+            <button>Buy now</button>
+        </div>
+        <div class="car">
+            <img src="images/Cadillac.avif" alt="">
+            <h3>car item -Cadillac</h3>
+            <p>price: $20000</p>
+            <p>Quibusdam tempore magni nemo ea obcaecati minima dolorum atque eaque laboriosam sit veniam aliquid, beatae architecto labore, necessitatibus nulla et.</p>
+            <button>Buy now</button>
+        </div>
+        <div class="car">
+            <img src="images/aston-martin.avif" alt="">
+            <h3>car item -Aston Martin</h3>
+            <p>price: $30000</p>
+            <p>Laboriosam culpa sed, molestiae, fugit error sequi dolor soluta ipsa doloribus delectus debitis dolores sint nesciunt ut voluptatem eveniet eaque!</p>
+            <button>Buy now</button>
+        </div>
+        <div class="car">
+            <img src="images/williams.avif" alt="">
+            <h3>car item -Williams</h3>
+            <p>price: $40000</p>
+            <p>Ab, maxime vero harum perspiciatis recusandae minima placeat fugiat iusto sint nihil alias assumenda consectetur aliquam nam quia. Facilis, aliquid!</p>
+            <button>Buy now</button>
+        </div>
+        <div class="car">
+            <img src="images/audi.jpg" alt="">
+            <h3>car item -Audi</h3>
+            <p>price: $50000</p>
+            <p>At, unde! Accusamus fuga minima harum obcaecati, ut autem culpa reprehenderit ipsam numquam ducimus necessitatibus quas eligendi, totam facere? Corporis.</p>
+            <button>Buy now</button>
+        </div>
+        <div class="car">
+            <img src="images/haas.avif" alt="">
+            <h3>car item -Haas</h3>
+            <p>price: $60000</p>
+            <p>Id ipsa cupiditate sapiente ipsam, consectetur consequuntur cumque, quidem similique velit necessitatibus dicta debitis laboriosam nesciunt, dolorum odit non!</p>
+            <button>Buy now</button>
+        </div>
+        <div class="car">
+            <img src="images/alpine.avif" alt="">
+            <h3>car item -Alpine</h3>
+            <p>price: $70000</p>
+            <p>Corrupti consequuntur sapiente accusantium dolorum modi laborum quos est soluta ipsam possimus nostrum aut, officia cum aperiam qui nulla quam.</p>
+            <button>Buy now</button>
+        </div>
+        <div class="car">
+            <img src="images/racing-bulls.avif" alt="">
+            <h3>car item -Racing Bulls</h3>
+            <p>price: $80000</p>
+            <p>Repellat sint quisquam totam deleniti! Eaque dolorum quisquam id consequuntur ducimus, saepe, aperiam natus expedita non nobis libero totam dolorem.</p>
+            <button>Buy now</button>
+        </div>
+        <div class="car">
+            <img src="images/mclaren.avif" alt="">
+            <h3>car item -Mclaren</h3>
+            <p>price: $90000</p>
+            <p>Nam eligendi qui aut. Velit ducimus expedita obcaecati, maiores explicabo architecto numquam in provident ea earum tempora laboriosam autem itaque.</p>
+            <button>Buy now</button>
+        </div>
+        <div class="car">
+            <img src="images/redbull.avif" alt="">
+            <h3>car item -Redbull</h3>
+            <p>price: $100000</p>
+            <p>Laborum inventore obcaecati aperiam similique molestiae nisi dolor labore, magni qui repellat perspiciatis voluptate rem aliquam illo ab. Error, reiciendis!</p>
+            <button>Buy now</button>
+        </div>
+        <div class="car">
+            <img src="images/ferrari.webp" alt="">
+            <h3>car item -Ferrari</h3>
+            <p>price: $110000</p>
+            <p>Pariatur eligendi ducimus similique eveniet velit totam cupiditate, distinctio quis earum, quisquam repellendus quasi provident, atque fugiat. Suscipit, explicabo.</p>
+            <button>Buy now</button>
+        </div>
+        <div class="car">
+            <img src="images/Mercedes.avif" alt="">
+            <h3>car item -Mercedes</h3>
+            <p>price: $120000</p>
+            <p>Quod rerum quo earum dolores magnam illum, quaerat beatae fugit qui assumenda eos fuga eligendi reprehenderit cumque repellat consectetur nam.</p>
+            <button>Buy now</button>
+        </div>
+    </div>
+</body>
+</html>
